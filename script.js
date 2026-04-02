@@ -18,3 +18,7 @@ eventClick(info) {
   localStorage.setItem("items", JSON.stringify(items));
   render();
 }
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js');
+}
