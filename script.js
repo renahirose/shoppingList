@@ -22,3 +22,12 @@ eventClick(info) {
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('service-worker.js');
 }
+
+function setTheme(theme) {
+  document.body.className = theme;
+  localStorage.setItem("theme", theme);
+}
+
+// 起動時にテーマ復元
+const savedTheme = localStorage.getItem("theme") || "pink";
+setTheme(savedTheme);
