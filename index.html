@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>おかいものカレンダー</title>
+
+  <!-- フォント -->
+  <link href="https://fonts.googleapis.com/css2?family=Rounded+Mplus+1c&display=swap" rel="stylesheet">
+
+  <!-- FullCalendar -->
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🛍️ おかいものカレンダー</h1>
+
+<div id="summary">
+  <p>合計（税抜）：¥<span id="total">0</span></p>
+  <p>合計（税込）：¥<span id="totalTax">0</span></p>
+</div>
+
+<div id="unbought"></div>
+
+<div id="calendar"></div>
+
+<!-- モーダル -->
+<div id="modal" class="hidden">
+  <div class="modal-content">
+    <h2 id="selectedDate"></h2>
+
+    <input type="text" id="itemName" placeholder="何を買う？">
+    <input type="number" id="price" placeholder="いくら？">
+
+    <select id="status">
+      <option value="未購入" selected>未購入</option>
+      <option value="購入済">購入済</option>
+    </select>
+
+    <textarea id="memo" placeholder="メモ"></textarea>
+
+    <button onclick="saveItem()">保存</button>
+    <button onclick="closeModal()">キャンセル</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
