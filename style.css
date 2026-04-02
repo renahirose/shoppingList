@@ -1,6 +1,6 @@
 body {
   font-family: 'Rounded Mplus 1c', sans-serif;
-  background: #FFF7F7;
+  background: linear-gradient(#FFF7F7, #EAF6FF);
   text-align: center;
   margin: 0;
 }
@@ -9,65 +9,48 @@ h1 {
   background: #FFD1DC;
   padding: 15px;
   margin: 0;
-  border-bottom: 3px solid #fff;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .message {
-  color: #888;
   margin: 10px;
+  color: #777;
+}
+
+#summary, #unbought {
+  margin: 10px;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
 #summary {
   background: #CDE7FF;
-  padding: 15px;
-  border-radius: 15px;
-  margin: 10px;
 }
 
 #unbought {
-  background: #FFE4B5;
-  padding: 15px;
-  margin: 10px;
-  border-radius: 15px;
+  background: #FFF0C9;
 }
 
-.fc-daygrid-day.fc-day-past {
-  background: #eee !important;
+button {
+  padding: 12px;
+  margin: 6px;
+  border: none;
+  border-radius: 20px;
+  background: #FFD1DC;
+  font-size: 16px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
 
-.hidden {
-  display: none;
-}
-
-#modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.3);
+button:active {
+  transform: scale(0.95);
 }
 
 .modal-content {
   background: white;
   padding: 20px;
-  margin: 40px 10px;
-  border-radius: 20px;
-}
-
-button {
-  padding: 12px;
-  margin: 5px;
-  border: none;
-  border-radius: 15px;
-  background: #FFD1DC;
-  font-size: 16px;
-}
-
-input, textarea, select {
-  width: 90%;
-  margin: 8px;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid #ddd;
+  margin: 30px 10px;
+  border-radius: 25px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
