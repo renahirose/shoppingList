@@ -1,3 +1,16 @@
+const calendarEl = document.getElementById('calendar');
+const calendar = new FullCalendar.Calendar(calendarEl, {
+  initialView: 'dayGridMonth',
+  dateClick: function(info) {
+    // クリック時の処理（例: モーダル開く）
+    selectedDate = info.dateStr;
+    document.getElementById("selectedDate").innerText = selectedDate;
+    document.getElementById("modal").classList.remove("hidden");
+  },
+  // 他のオプションやイベントもここに入れられます
+});
+calendar.render();
+
 // ----------------------------
 // 編集モード & 削除・購入済ボタン
 // ----------------------------
