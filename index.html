@@ -5,10 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>おかいものカレンダー</title>
 
-  <!-- フォント -->
   <link href="https://fonts.googleapis.com/css2?family=Rounded+Mplus+1c&display=swap" rel="stylesheet">
 
-  <!-- FullCalendar -->
   <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
 
@@ -17,8 +15,10 @@
 <body>
 
 <h1>🛍️ おかいものカレンダー</h1>
+<p class="message">きょうもお買いものがんばろう🌷</p>
 
 <div id="summary">
+  <p>今月の合計：¥<span id="monthTotal">0</span></p>
   <p>合計（税抜）：¥<span id="total">0</span></p>
   <p>合計（税込）：¥<span id="totalTax">0</span></p>
 </div>
@@ -27,7 +27,6 @@
 
 <div id="calendar"></div>
 
-<!-- モーダル -->
 <div id="modal" class="hidden">
   <div class="modal-content">
     <h2 id="selectedDate"></h2>
