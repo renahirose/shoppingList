@@ -54,3 +54,37 @@ button:active {
   border-radius: 25px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
+
+/* デフォルト（ピンク） */
+body.pink {
+  background: linear-gradient(#FFF7F7, #FFE4EC);
+}
+
+body.pink h1 {
+  background: #FFD1DC;
+}
+
+body.pink #summary {
+  background: #CDE7FF;
+}
+
+body.pink #unbought {
+  background: #FFF0C9;
+}
+
+/* ブルーテーマ */
+body.blue {
+  background: linear-gradient(#EAF6FF, #D6ECFF);
+}
+
+body.blue h1 {
+  background: #A0D8FF;
+}
+
+body.blue #summary {
+  background: #BFE9FF;
+}
+
+body.blue #unbought {
+  background: #E0F7FA;
+}
